@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Skippers</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_location_hours">Location and Hours</string>
+    <string name="title_activity_seadogs_grille">Seadogs Grille</string>
+    <string name="title_activity_soups">Soups</string>
+    <string name="title_activity_salads">Salads</string>
+    <string name="title_activity_fresh">Fresh</string>
+    <string name="title_activity_frozen">Frozen</string>
+    <string name="title_activity_desserts">Desserts</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_fresh_food">FreshFood</string>
+</resources>

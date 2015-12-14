@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tomkuenzler.skippersapp.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/Bisque"
+    >
+    <ImageView
+        android:id="@+id/logo_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+    <Button
+        android:id="@+id/menu_button"
+        style="@style/ButtonStyle"
+        android:text="Menu and Cooking Info"
+        android:onClick="menuClick"
+        />
+    <Button
+        android:id="@+id/location_hours_button"
+        style="@style/ButtonStyle"
+        android:text="Location and Hours"
+        android:onClick="locationHoursClick"
+        android:layout_below="@id/menu_button"
+        />
+    <Button
+        android:id="@+id/seadogs_button"
+        style="@style/ButtonStyle"
+        android:text="SeaDogs Grille"
+        android:onClick="seadogsGrilleClick"
+        android:layout_below="@id/location_hours_button"
+        />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seadogs_button"
+        android:text="647 Route 72 Barnegat, NJ 08005"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+    />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:text="(609)698-4430"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:text="SkippersSeafoodMarketNJ@gmail.com"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            />
+
+
+    <!--<Button-->
+        <!--android:id="@+id/contact_button"-->
+        <!--style="@style/ButtonStyle"-->
+        <!--android:text="Contact Information"-->
+        <!--android:onClick="contactInfoClick"-->
+        <!--android:layout_below="@id/seadogs_button"-->
+        <!--/>-->
+    </RelativeLayout>
+
+</RelativeLayout>
